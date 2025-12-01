@@ -10,15 +10,13 @@ IMAGE_NAME=wadajun8/omnivla-img:v1
 # 1. Setup (Run only once: make setup)
 # ==========================================================
 setup:
-	@echo "Installing Git LFS..."
-	# if git-lfs is missing, please run 'sudo apt install git-lfs' manually.
-	git lfs install
+	@echo "Installing Git ..."
 	
 	@echo "Downloading model checkpoints..."
 	# Added '|| true' to prevent errors if the directory already exists.
-	git lfs clone https://huggingface.co/NHirose/omnivla-original || true
-	git lfs clone https://huggingface.co/NHirose/omnivla-original-balance || true
-	git lfs clone https://huggingface.co/NHirose/omnivla-finetuned-cast || true
+	git clone https://huggingface.co/NHirose/omnivla-original || true
+	git clone https://huggingface.co/NHirose/omnivla-original-balance || true
+	git clone https://huggingface.co/NHirose/omnivla-finetuned-cast || true
 	@echo "Setup Done!"
 
 # ==========================================================
