@@ -11,6 +11,19 @@
 ### Installation
 Please set up a conda environment (see instructions in [SETUP.md](SETUP.md)).
 
+### Docker Support
+We provide a Makefile to simplify the environment setup.
+
+1. **Initial Setup**: Run this command once to build the Docker image and prepare dependencies.
+    ```bash
+    make setup
+    ```
+
+2. **Usage**: To start the container and enter the development environment, simply run:
+    ```bash
+    make
+    ```
+
 ### Inference
 1. Download our checkpoints and place them in our directory. "omnivla-original" is the trained checkpoints of the OmniVLA for paper submission. "omnivla-original-balance" contains the trained checkpoints of OmniVLA that account for the data balance in the LeLaN dataset. And "omnivla-finetuned-cast" is finetuned checkpoints with the [CAST](https://huggingface.co/datasets/catglossop/CAST-dataset) dataset.
     ```
