@@ -15,11 +15,12 @@ Please set up a conda environment (see instructions in [SETUP.md](SETUP.md)).
 We provide a Makefile to simplify the environment setup.
 
 1. **Initial Setup**: Run this command once to build the Docker image and prepare dependencies.
+   > **Note:** This process involves building a large Docker image and downloading dependencies. It may take a significant amount of time depending on your environment.
     ```bash
     make setup
     ```
 
-2. **Usage**: To start the container and enter the development environment, simply run:
+3. **Usage**: To start the container and enter the development environment, simply run:
     ```bash
     make
     ```
