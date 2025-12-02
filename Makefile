@@ -1,3 +1,10 @@
+# --------------------------------------------------------------------
+# Copyright (c) 2025 Junya Wada
+#
+# This software is released under the MIT License.
+# https://opensource.org/licenses/MIT
+# --------------------------------------------------------------------
+
 # Make configuration (Set default to 'run')
 .PHONY: all setup run build rebuild push
 

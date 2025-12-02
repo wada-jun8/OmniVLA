@@ -1,3 +1,8 @@
+# Copyright (c) 2025 Junya Wada
+
+# This software is released under the MIT License.
+# https://opensource.org/licenses/MIT
+
 # Base image: CUDA 11.8 devel (Required for compiling FlashAttention)
 FROM nvidia/cuda:11.8.0-cudnn8-devel-ubuntu22.04
 
